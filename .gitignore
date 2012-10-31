@@ -1,0 +1,17 @@
+.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+tmp/*
+*.swp
+db/schema.rb
+.idea/*
+tags
+.sass-cache
+public/assets/
+public/spree/
+.env
+config/database.yml
+config/initializers/secret_token.rb
+private/exports/*.png

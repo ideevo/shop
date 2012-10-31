@@ -1,0 +1,16 @@
+de:
+  # SPREE CORE
+  home: Shop
+  errors_prohibited_this_record_from_being_saved:
+    one: "Bitte noch einmal überprüfen"
+    other: "Bitte noch einmal überprüfen"
+
+  spree:
+    # GENERAL
+    date: Datum
+    time: Uhrzeit
+    admin:
+      shared:
+        contents_tab:
+          # SPREE ESSENTIAL CMS
+          content: 'Statische Seiten'

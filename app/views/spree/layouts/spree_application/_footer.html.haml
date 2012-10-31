@@ -1,0 +1,17 @@
+#footer_pusher
+
+#ideevo_footer
+
+  .hero
+    = image_tag 'store/footer_germany_hero.png', id: 'footer_hero'
+
+  .container
+    = image_tag 'logos/ideevo/white80x19.png'
+    %p
+      = '&copy;'.html_safe
+      2010-#{Date.today.year} Isbrecht Bauer Hildebrandt GbR
+    %p
+      %ul
+        = render 'spree/shared/main_menu_items'
+
+  .clearer

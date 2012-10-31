@@ -1,0 +1,27 @@
+:javascript
+
+  $(function() {
+    $('.ad-hoc-option-select').change(function() {
+      updateAdHocImage();
+    });
+  });
+
+  function compute_image_attributes() {
+    var result = [];
+    $("select.ad-hoc-option-select, input:checked.ad-hoc-option-select").each(function() {
+      var id=$(this).attr('id').replace('ad_hoc_option_values_','');
+      var val=$(this).val();
+      result.push("attributes[" + id + "]=" + val);
+    });
+    return result.join('&');
+  }
+
+  function updateAdHocImage() {
+    var attributes = compute_image_attributes();
+    console.log("attributes: " + attributes);
+    var product_name = $('#product_metadata').data('permalink');
+    var newSource = '/products/' + product_name + '/image/exhibition/product.png?' + attributes
+    console.log("newSource: " + newSource);
+    $('#main-image img').attr('src', newSource);
+  }
+
