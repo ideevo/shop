@@ -3,7 +3,9 @@
 - else
   - if item.attributes.present?
     - image_name = File.basename(item.product.images.first.attachment_file_name, '.png')
-    - custom_image_url = image_custom_product_path(id: item.product.permalink, image_id: image_name, size: :small, attributes: item.attributes)
-    = link_to image_tag(custom_image_url), item.variant.product
+    - small_image_url = image_custom_product_path(id: item.product.permalink, image_id: image_name, size: :small, attributes: item.attributes)
+    - large_image_url = image_custom_product_path(id: item.product.permalink, image_id: image_name, size: :large, attributes: item.attributes)
+    - # TODO: lighbox
+    = link_to image_tag(small_image_url), large_image_url
   - else
     = link_to image_tag(item.variant.images.first.attachment.url(:small)), item.variant.product
