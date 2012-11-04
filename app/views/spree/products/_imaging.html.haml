@@ -20,7 +20,7 @@
     var attributes = compute_image_attributes();
     console.log("attributes: " + attributes);
     var product_name = $('#product_metadata').data('permalink');
-    var newSource = '/products/' + product_name + '/image/exhibition/product.png?' + attributes
+    var newSource = '/products/' + product_name + '/images/exhibition/product.png?' + attributes
     console.log("newSource: " + newSource);
     $('#main-image img').attr('src', newSource);
   }

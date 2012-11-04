@@ -2,7 +2,7 @@ Spree::ProductsController.class_eval do
 
   def image
     return unless valid?
-    options = { product_name: @product.permalink, image_name: params[:image], size: params[:size], attributes: attributes }
+    options = { product_name: @product.permalink, image_name: params[:image_id], size: params[:size], attributes: attributes }
     image = Ideevo::CustomImage.new(options)
     path = image.path
     # TODO Send through Nginx

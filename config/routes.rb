@@ -1,6 +1,16 @@
-Ideevo::Application.routes.draw do
+Spree::Core::Engine.routes.draw do
 
-  get '/products/:id/image/:image/:size', :to => 'spree/products#image', :as => :product_image
+  resources :products do
+    member do
+      resources :images, only: :show do
+        get ':size', to: 'products#image', as: :custom_product
+      end
+    end
+  end
+
+end
+
+Ideevo::Application.routes.draw do
 
   mount Spree::Core::Engine, :at => '/'
 

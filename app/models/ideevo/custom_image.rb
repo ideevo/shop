@@ -71,7 +71,7 @@ class Ideevo::CustomImage
   end
 
   def magick_size
-    return unless valid_size?
+    return [100, 100] unless valid_size?
     styles[@size.to_s].split('>').first.split('x').map(&:to_i)
   end
 
@@ -100,7 +100,7 @@ class Ideevo::CustomImage
   end
 
   def self.generator_path
-    Rails.root.join('private/generator')
+    Rails.root.join('../heroes')
   end
 
   def self.exports_path
