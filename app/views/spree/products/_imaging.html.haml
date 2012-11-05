@@ -18,10 +18,27 @@
 
   function updateAdHocImage() {
     var attributes = compute_image_attributes();
-    console.log("attributes: " + attributes);
     var product_name = $('#product_metadata').data('permalink');
-    var newSource = '/products/' + product_name + '/images/exhibition/product.png?' + attributes
-    console.log("newSource: " + newSource);
-    $('#main-image img').attr('src', newSource);
+    $('ul.thumbnails li').each(function() {
+      var link = $(this).find('a');
+      var image = $(this).find('img');
+      var image_id = $(this).attr('data-image_id');
+      if (!image_id) {
+        var new_image_id = link.attr('href').split('/').pop().split('.')[0];
+        $(this).attr('data-image_id', new_image_id)
+        console.log('set to ' + new_image_id);
+      }
+      var image_id = $(this).attr('data-image_id');
+      var product_image = '/products/' + product_name + '/images/' + image_id + '/product.png?' + attributes
+      var thumb_image = '/products/' + product_name + '/images/' + image_id + '/mini.png?' + attributes
+      link.attr('href', product_image);
+      image.attr('src', thumb_image);
+    });
+
+    $('ul.thumbnails li.selected').click()
+
+    //console.log("newSource: " + newSource);
+    //$('#main-image img').attr('src', newSource);
   }
+
 
