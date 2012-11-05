@@ -33,12 +33,11 @@
       var thumb_image = '/products/' + product_name + '/images/' + image_id + '/mini.png?' + attributes
       link.attr('href', product_image);
       image.attr('src', thumb_image);
+      if ($(this).hasClass('selected')) {
+        $('#main-image img').attr('src', product_image);
+        $("#main-image").data('selectedThumb', product_image);
+      }
     });
-
-    $('ul.thumbnails li.selected').click()
-
-    //console.log("newSource: " + newSource);
-    //$('#main-image img').attr('src', newSource);
   }
 
 
