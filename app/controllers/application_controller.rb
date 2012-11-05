@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
                 unit: "EUR",
                 precision: 2,
                 separator: ',',
-                delimiter: ' ',
+                delimiter: ' ',
               }
             }
           }

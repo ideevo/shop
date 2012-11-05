@@ -26,7 +26,6 @@
       if (!image_id) {
         var new_image_id = link.attr('href').split('/').pop().split('.')[0];
         $(this).attr('data-image_id', new_image_id)
-        console.log('set to ' + new_image_id);
       }
       var image_id = $(this).attr('data-image_id');
       var product_image = '/products/' + product_name + '/images/' + image_id + '/product.png?' + attributes

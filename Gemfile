@@ -14,9 +14,8 @@ gem 'spree_i18n', github: 'spree/spree_i18n', ref: '016acc26668ed8c4f606da5e3d3d
 gem 'spree_paypal_express', github: 'spree/spree_paypal_express', branch: '1-1-stable', ref: '267be504e4affd7866a5e31e80565126f9db7cc3'
 gem 'spree_social', github: 'halo/spree_social', branch: '1-1-stable', ref: 'e8641c6a490d0bfc392e8513a70f8a83615f8931'
 gem 'spree_master_price', github: 'mdlima/spree-master-price', ref: 'ade0401f506075783ab4344aa04ab18aea56193c'
-#gem 'spree_showcase', github: 'daemonsy/spree_showcase', ref: '51424a6c6f07a49472e8afaa5b37000a0d4bf333'
 gem 'spree_flexi_variants', github: 'halo/spree_flexi_variants', branch: 'spree-1-1-stable'
-#gem 'spree_flexi_variants', path: '../../spree_flexi_variants', branch: 'spree-1-1-stable'
+#gem 'spree_flexi_variants', path: '../spree_flexi_variants', branch: 'spree-1-1-stable'
 gem 'spree_essential_cms', github: 'citrus/spree_essential_cms', ref: '31c229ad22908172fdd1ae38d95cc8a3e9aae8d9'
 
 # Custom
