@@ -17,3 +17,18 @@ de:
           content: 'Statische Seiten'
   orders: Bestellungen
   overview: Statistik
+
+  order_mailer:
+    confirm_email:
+      dear_customer: 'Lieber Fußballfan!'
+      instructions: 'Hier kommt deine Bestellbestätigung vom Ideevo Shop. Bitte überprüfen und gut aufbewahren.'
+      order_summary: Bestellübersicht
+      subtotal: Zwischensumme
+      total: Gesamt
+      thanks: "Vielen Dank!\n\nwww.ideevo.com"
+    shipped_email:
+      dear_customer: 'Lieber Fußballfan!'
+      instructions: 'Deine Lieferung ist unterwegs!'
+      shipment_summary: Lieferübersicht
+      track_information: Paketverfolgung
+      thanks: "Vielen Dank!\n\nwww.ideevo.com"

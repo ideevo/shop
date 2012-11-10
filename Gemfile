@@ -10,7 +10,7 @@ gem 'haml-rails', '0.3.5'
 
 # Spree
 gem 'spree', github: 'spree/spree', branch: '1-1-stable', ref: '91d3e14d42ef7ef79f7ae612bf42336ae5a9e821'
-gem 'spree_i18n', github: 'spree/spree_i18n', ref: '016acc26668ed8c4f606da5e3d3d9faa7ee4dc83'
+gem 'spree_i18n', github: 'spree/spree_i18n', ref: '4eb339625d31ab8db51e93e83639f40bff8e7776'
 gem 'spree_paypal_express', github: 'spree/spree_paypal_express', branch: '1-1-stable', ref: '267be504e4affd7866a5e31e80565126f9db7cc3'
 gem 'spree_social', github: 'halo/spree_social', branch: '1-1-stable', ref: 'e8641c6a490d0bfc392e8513a70f8a83615f8931'
 gem 'spree_master_price', github: 'mdlima/spree-master-price', ref: 'ade0401f506075783ab4344aa04ab18aea56193c'
