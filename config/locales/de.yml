@@ -15,3 +15,5 @@ de:
         contents_tab:
           # SPREE ESSENTIAL CMS
           content: 'Statische Seiten'
+  orders: Bestellungen
+  overview: Statistik
