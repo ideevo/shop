@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Spree
   class Calculator::Hero < Calculator
 
