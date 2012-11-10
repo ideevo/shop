@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/halo/spree_flexi_variants.git
-  revision: 7a20a38a461f6e020541d812aaa9834a4f27dd74
+  revision: d9a204bd16edbbec38e4e5457be604bbf04817a1
   branch: spree-1-1-stable
   specs:
     spree_flexi_variants (1.0.0)

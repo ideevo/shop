@@ -1,3 +1,19 @@
 en:
   # SPREE CORE
   home: Shop
+  errors_prohibited_this_record_from_being_saved:
+    one: "Please double-check"
+    other: "Please double-check"
+
+  order_mailer:
+    confirm_email:
+      dear_customer: 'Dear Soccer Fan!'
+      thanks: "Thank you!\n\nwww.ideevo.com"
+
+  shipment_mailer:
+    shipped_email:
+      dear_customer: 'Dear Soccer Fan!'
+      thanks: "Thank you!\n\nwww.ideevo.com"
+
+  spree:
+    including_tax: 'Incl. VAT.'
