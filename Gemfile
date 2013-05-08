@@ -1,7 +1,7 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 gem 'mysql2', '0.3.11'
 gem 'jquery-rails', '2.1.3'
 gem 'rails-i18n', '0.6.6'
