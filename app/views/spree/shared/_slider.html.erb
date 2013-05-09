@@ -1,4 +1,4 @@
-<% if Spree::Slide.published.count > 0 %>
+<% if Spree::Slide.published.count > 0 && params[:controller] == 'spree/home' && params[:action] == 'index' %>
   <div class="slider-wrapper theme-default">
     <div class="ribbon"></div>
     <div id="slider" class="nivoSlider">
