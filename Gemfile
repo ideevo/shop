@@ -17,6 +17,7 @@ gem 'spree_master_price', github: 'mdlima/spree-master-price', ref: 'ade0401f506
 gem 'spree_flexi_variants', github: 'halo/spree_flexi_variants', branch: 'spree-1-1-stable'
 #gem 'spree_flexi_variants', path: '../spree_flexi_variants', branch: 'spree-1-1-stable'
 gem 'spree_essential_cms', github: 'citrus/spree_essential_cms', ref: '31c229ad22908172fdd1ae38d95cc8a3e9aae8d9'
+gem 'spree_slider', '1.2.0'
 
 # Custom
 gem 'carrierwave', '0.7.0'

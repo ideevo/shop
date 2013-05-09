@@ -11,5 +11,9 @@
  *= require_self
  *= require_tree .
  *= require store/spree-flexi-variants
+ *= require themes/default/default
+ *= require themes/pascal/pascal
+ *= require themes/orman/orman
+ *= require nivo-slider
  *= require store/ideevo
 */
