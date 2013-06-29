@@ -30,7 +30,8 @@ module Ideevo
       end
 
       def available_locales
-        %w{ de en fr es ca cs-CZ da et fa fi il it ko lt lv no-NO nl pl pt-BR pt-PT ru sk sl-SI sv-SE th vn zh-CN zh-TW }
+        # %w{ de en fr es ca cs-CZ da et fa fi il it ko lt lv no-NO nl pl pt-BR pt-PT ru sk sl-SI sv-SE th vn zh-CN zh-TW }
+        %w{ de en nl es it fr }
       end
 
       def set_locale
