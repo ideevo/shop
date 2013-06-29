@@ -33,6 +33,7 @@ group :production do
 end
 
 group :development do
+  gem 'capistrano', '2.15.4'
   gem 'foreman', '0.60.2'
   gem 'thin', '1.3.1'
 end
